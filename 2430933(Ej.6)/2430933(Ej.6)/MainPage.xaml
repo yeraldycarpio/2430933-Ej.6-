@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_2430933_Ej._6_.MainPage">
+
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style x:Key="MyEntryStyle" TargetType="Entry">
+                    <Style.Triggers>
+                        <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                            <Setter Property="TextColor" Value="Green"/>
+                            <Setter Property="FontSize" Value="30"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <Entry Style="{StaticResource MyEntryStyle}" Text="Libro:Aplicacion"/>
+        <Entry Style="{StaticResource MyEntryStyle}" Text="Negocio"/>
+        <Entry Style="{StaticResource MyEntryStyle}" Text="Xamari.Form"/>
+
+
+    </StackLayout>
+
+</ContentPage>
